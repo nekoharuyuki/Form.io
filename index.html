@@ -1,5 +1,12 @@
 <!DOCTYPE HTML>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>お問い合せ</title>
+	</head>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158207338-1"></script>
 	<script>
@@ -13,14 +20,21 @@
 	<form
 		action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeMkXgsT8_xs4mIiF-bc6InDCAwknqLiy5Gh-JrQGnCHAPrJQ/formResponse"
 		method="POST"
+		target="hidden_iframe"
+		onsubmit="submitted=true;"
+		class="c-form"
 	>
 	
 	<link rel="stylesheet" href="assets/css/main.css" />
 
 	<h1 style="text-align: center;">お問い合せ</h1>
 
+	<p style="text-align: center; margin: 20px auto">
+		下記の項目を入力して、「送信する」のボタンを押して下さい。<br>必須の欄は必ず全てご記入下さい。
+	</p>
+
 	<p style="text-align: center; margin: 40px auto">
-		下記の項目を入力して、「送信する」のボタンを押して下さい。必須の欄は必ず全てご記入下さい。<br>※回答までには1週間程度かかる場合もございます。御了承下さい。
+		※回答までには1週間程度かかる場合もございます。御了承下さい。
 	</p>
 
 	<form class="c-form">
@@ -63,4 +77,15 @@
 			<button type="submit">送信する</button>
 		</div>
 	</form>
+
+	<script type="text/javascript">
+		let submitted = false;
+	</script>
+
+	<iframe
+		name="hidden_iframe"
+		id="hidden_iframe"
+		style="display: none"
+		onload="if(submitted){window.location='./pages/thanks.html';}"
+	></iframe>
 </html>
