@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158207338-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-158207338-1');
+	</script>
+	
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<p style="text-align: center; margin: 40px auto">
+		お気軽にお問い合わせください。
+	</p>
+	<form class="c-form">
+		<div class="c-form__item">
+			<label class="c-form__label" for="field-name"
+				>名前・会社名<span class="c-form__required">必須</span></label
+			>
+			<input
+				class="c-form__input"
+				id="field-name"
+				placeholder="氏名"
+				type="text"
+				required="required"
+			/>
+		</div>
+		<div class="c-form__item">
+			<label class="c-form__label" for="field-mail"
+				>メールアドレス<span class="c-form__required">必須</span></label
+			>
+			<input
+				class="c-form__input"
+				id="field-mail"
+				placeholder="sample@gmail.com"
+				type="email"
+				required="required"
+			/>
+		</div>
+		<div class="c-form__item">
+			<label class="c-form__label" for="field-message">メッセージ内容</label>
+			<textarea
+				class="c-form__input"
+				id="field-message"
+				placeholder="お問い合わせ内容"
+			></textarea>
+		</div>
+		<div class="c-form__submit">
+			<button type="submit">送信する</button>
+		</div>
+	</form>
+</html>
