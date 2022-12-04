@@ -1,6 +1,6 @@
 function onFormSubmit(e) {
   // フォームの回答を取得
-  var name = e.namedValues['お名前'][0];
+  var name = e.namedValues['名前・会社名'][0];
   var email = e.namedValues['メールアドレス'][0];
   var message = e.namedValues['お問い合わせ内容'][0];
   
