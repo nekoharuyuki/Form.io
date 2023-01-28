@@ -46,61 +46,46 @@
 	</head>
 
 	<body>
-		<h1 style="text-align: center;">お問い合せ</h1>
+		<div class="contact-bg">
+			<div class="contact-area inner">
+				<h1 style="text-align: center;">お問い合せ</h1>
+				<p class="contact-message">お問い合わせ、ご要望等がございましたら、お気軽にお問い合わせください。<br>
+					下記のプライバシーポリシーをご確認の上、送信してください。<br>
+					<span class="message-notice"><span class="essential">必須</span>は必須項目です。</span></p>
+				<p class="text notosan"><a href="">送信にあたっては、こちらのプライバシーポリシーをご覧ください。</a></p>	
 
-		<p style="text-align: center; margin: 20px auto">
-			下記の項目を入力して、「送信する」のボタンを押して下さい。<br>必須の欄は必ず全てご記入下さい。
-		</p>
-
-		<p style="text-align: center; margin: 40px auto">
-			※回答までには1週間程度かかる場合もございます。御了承下さい。
-		</p>
-
-		<form class="c-form">
-			<div class="c-form__item">
-				<label class="c-form__label" for="field-name"
-					>名前・会社名<span class="c-form__required">必須</span></label
-				>
-				<input
-					name="entry.14683452"
-					class="c-form__input"
-					id="field-name"
-					placeholder="氏名"
-					type="text"
-					required="required"
-				/>
+				<div class="contact-inner">
+					<form method="post">
+						<table class="contact-table">	
+							<tr class="table-list">
+								<th>
+									<label for="name">名前・会社名<span class="essential">必須</span></label>
+								</th>
+								<td>
+									<input type="text" name="entry.14683452" id="name" placeholder="お名前をご入力ください" class="input-area" autocomplete="name" required="required">
+								</td>
+							</tr>
+							<tr class="table-list">
+								<th><label for="mail">メールアドレス<span class="essential">必須</span></label></th>
+								<td>
+									<input id="mail" type="email" name="entry.448452954" placeholder="メールアドレスをご入力ください" class="input-area" autocomplete="email" required="required">
+								</td>
+							</tr>
+							<tr class="table-list">
+								<th><label for="comment">お問い合わせ内容<span class="essential">必須</span></label></th>
+								<td>
+									<textarea id="comment" name="entry.1020368020" required="required"></textarea>
+								</td>
+							</tr>
+						</table>
+					</form>	
+					<input type="submit" value="送信する" class="submit-button">	
+				</div>
 			</div>
-			<div class="c-form__item">
-				<label class="c-form__label" for="field-mail"
-					>メールアドレス<span class="c-form__required">必須</span></label
-				>
-				<input
-					name="entry.448452954"
-					class="c-form__input"
-					id="field-mail"
-					placeholder="sample@gmail.com"
-					type="email"
-					required="required"
-				/>
-			</div>
-			<div class="c-form__item">
-				<label class="c-form__label" for="field-message">お問い合わせ内容</label>
-				<textarea
-					name="entry.1020368020"
-					class="c-form__input"
-					id="field-message"
-					placeholder="お問い合わせ内容"
-				></textarea>
-			</div>
-			<div class="c-form__submit">
-				<button type="submit">送信する</button>
-			</div>
-		</form>
-
+		</div>	
 		<script type="text/javascript">
 			let submitted = false;
 		</script>
-
 		<iframe
 			name="hidden_iframe"
 			id="hidden_iframe"
